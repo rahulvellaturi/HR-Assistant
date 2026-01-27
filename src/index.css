@@ -15,22 +15,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   margin: 0;
   padding: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 
 #root {
   width: 100%;
-  min-height: 100vh;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /* Custom scrollbar styles are handled in component */
